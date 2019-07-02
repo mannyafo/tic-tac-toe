@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="823180f3-2ee4-4539-a9ea-68e541bbfb86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/emmanuelafoakwah/RunGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emmanuelafoakwah/RunGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emmanuelafoakwah/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emmanuelafoakwah/AI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/emmanuelafoakwah/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emmanuelafoakwah/TicTacToe.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/emmanuelafoakwah/RunGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+            <state relative-caret-position="-486">
+              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/emmanuelafoakwah/TicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3655">
-              <caret line="215" column="33" selection-start-line="215" selection-start-column="33" selection-end-line="215" selection-end-column="33" />
+            <state relative-caret-position="1809">
+              <caret line="214" column="86" selection-start-line="214" selection-start-column="86" selection-end-line="214" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -36,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/emmanuelafoakwah/AI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="255">
+              <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -68,8 +67,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/emmanuelafoakwah/Main.java" />
         <option value="$PROJECT_DIR$/ReadMe.txt" />
-        <option value="$PROJECT_DIR$/src/com/emmanuelafoakwah/TicTacToe.java" />
         <option value="$PROJECT_DIR$/src/com/emmanuelafoakwah/RunGame.java" />
+        <option value="$PROJECT_DIR$/src/com/emmanuelafoakwah/TicTacToe.java" />
+        <option value="$PROJECT_DIR$/src/com/emmanuelafoakwah/AI.java" />
       </list>
     </option>
   </component>
@@ -114,7 +114,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562076978030" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562078933757" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -178,15 +178,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562067615199</updated>
-      <workItem from="1562067619302" duration="9463000" />
+      <workItem from="1562067619302" duration="11200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9463000" />
+    <option name="totallyTimeSpent" value="11200000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="864" y="4" width="821" height="542" extended-state="0" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -194,7 +194,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2720105" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12652811" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -204,7 +204,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.7188264" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32922733" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,13 +234,6 @@
     <entry file="file://$PROJECT_DIR$/src/ReadMe">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/emmanuelafoakwah/AI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReadMe.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -248,17 +241,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/emmanuelafoakwah/AI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/emmanuelafoakwah/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3655">
-          <caret line="215" column="33" selection-start-line="215" selection-start-column="33" selection-end-line="215" selection-end-column="33" />
+        <state relative-caret-position="1809">
+          <caret line="214" column="86" selection-start-line="214" selection-start-column="86" selection-end-line="214" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/emmanuelafoakwah/RunGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+        <state relative-caret-position="-486">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>

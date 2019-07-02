@@ -211,6 +211,30 @@ public class TicTacToe {
     }
 
     /**
+     * Returns an int array containing the free indexes on the game board
+     * @return an array of integers containing the available indexes on the game board
+     */
+    public int[] availableIndexes(){
+        int n = 0; // Number of free indexes
+        // Calculate free indexes
+        for(int i = 0; i<9; i++){
+            if(board[i]=='-'){
+                n++;
+            }
+        }
+        // Create and populate array of free indexes
+        int[] av = new int[n];
+        int index = 0;
+        for(int i = 0; i<9; i++){
+            if(board[i]=='-'){
+                av[index]=i;
+                index++;
+            }
+        }
+        return av;
+    }
+
+    /**
      * Prints the current status of the game board
      */
     public void printGameBoard(){
