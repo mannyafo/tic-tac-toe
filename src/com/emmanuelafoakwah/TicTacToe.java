@@ -178,7 +178,7 @@ public class TicTacToe {
 
     /**
      * Checks whether the game board is full (i.e. draw condition)
-     * @return
+     * @return a boolean indicating whether the draw condition is met
      */
     public boolean drawCondition(){
         // Loops throught the array, if empty token is found return false, otherwise return true
@@ -204,7 +204,7 @@ public class TicTacToe {
         if(win){
             return this.winnerToken + " wins!";
         }else if(draw){
-            return "Draw!"
+            return "Draw!";
         }else{
             return "continue";
         }
@@ -214,7 +214,6 @@ public class TicTacToe {
      * Prints the current status of the game board
      */
     public void printGameBoard(){
-        System.out.println();
         System.out.println("-------------");
         for(int i = 0; i<9; i++){
             if(i%3 == 0 && i!=0){
@@ -232,8 +231,7 @@ public class TicTacToe {
      * Prints an instructive game board indicating the numbers the player
      * should enter to occupy a given position on the game board
      */
-    public static void printInstructionBoard(){
-        System.out.println();
+    public void printInstructionBoard(){
         System.out.println("-------------");
         for(int i = 0; i<9; i++){
             if(i%3 == 0 && i!=0){
