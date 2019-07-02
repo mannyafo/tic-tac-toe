@@ -17,7 +17,7 @@ public class AI {
      */
     public int selectPosition(TicTacToe game){
         // Sets the array of available indexes
-        int[] available = game.availableIndexes();
+        int[] available = game.availablePositions();
 
         // Randomly selects an available index
         Random r = new Random();

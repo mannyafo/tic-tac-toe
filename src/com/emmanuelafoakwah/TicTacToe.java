@@ -55,13 +55,14 @@ public class TicTacToe {
     public boolean executeTurn(int position){
         // Turn player/ai position choice (1-9) into array index (0-8)
         int index = position-1;
-
+        //boolean valid = validIndex(index);
+        boolean valid = withinRange(index) && !isIndexTaken(index);
         // If the selection is valid assign the current token and flip the turn, else return false
-        if(validIndex(index)){
+        if(valid){
             board[index] = currentToken;
             currentToken = (currentToken==userToken) ? aiToken : userToken;
         }
-        return validIndex(index);
+        return valid;
     }
 
     /**
@@ -70,7 +71,9 @@ public class TicTacToe {
      * @return a boolean indicating whether the index choice is valid
      */
     public boolean validIndex(int index){
-         return withinRange(index) && isIndexTaken(index);
+        //System.out.println(withinRange(index));
+        //System.out.println(!isIndexTaken(index));
+         return withinRange(index) && !isIndexTaken(index);
     }
 
     /**
@@ -79,7 +82,8 @@ public class TicTacToe {
      * @return a boolean indicating whether the index choice is within range
      */
     public boolean withinRange(int index){
-        return index>0 && index<9;
+        System.out.println("Indx range: " + index);
+        return index>-1 && index<9;
     }
 
     /**
@@ -88,6 +92,7 @@ public class TicTacToe {
      * @return a boolean indicating whether the index selection is available
      */
     public boolean isIndexTaken(int index){
+        System.out.println("Taken: " + board[index]);
         return board[index]!='-';
     }
 
@@ -214,7 +219,7 @@ public class TicTacToe {
      * Returns an int array containing the free indexes on the game board
      * @return an array of integers containing the available indexes on the game board
      */
-    public int[] availableIndexes(){
+    public int[] availablePositions(){
         int n = 0; // Number of free indexes
         // Calculate free indexes
         for(int i = 0; i<9; i++){
@@ -227,7 +232,7 @@ public class TicTacToe {
         int index = 0;
         for(int i = 0; i<9; i++){
             if(board[i]=='-'){
-                av[index]=i;
+                av[index]=(i+1);
                 index++;
             }
         }
@@ -255,7 +260,7 @@ public class TicTacToe {
      * Prints an instructive game board indicating the numbers the player
      * should enter to occupy a given position on the game board
      */
-    public void printInstructionBoard(){
+    public static void printInstructionBoard(){
         System.out.println("-------------");
         for(int i = 0; i<9; i++){
             if(i%3 == 0 && i!=0){
@@ -269,4 +274,19 @@ public class TicTacToe {
         System.out.println();
     }
 
+    /**
+     * Get the user token
+     * @return the user token
+     */
+    public char getUserToken() {
+        return userToken;
+    }
+
+    /**
+     * Get the current token
+     * @return the current token
+     */
+    public char getCurrentToken() {
+        return currentToken;
+    }
 }
